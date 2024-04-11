@@ -10,7 +10,7 @@ bath=st.number_input("Number of Bathroms", min_value=1)
 gen_predictions = st.button('Generate Predicted Cost')
 
 if gen_predictions:
-    predicted_price = sqft*662 +bed*400+bath*200 # replace with final prediction model
+    predicted_price = sqft*662 - bed*458430 + bath*971200 # replace with final prediction model
     st.subheader('Estimated Cost of your Dream Home: '+"$"+f'{round(predicted_price):,}')
     #st.divider()
 
